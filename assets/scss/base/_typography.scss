@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Mukta";
+  font-weight: 400;
+  src: url("../fonts/Mukta-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mukta";
+  font-weight: 500;
+  src: url("../fonts/Mukta-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mukta";
+  font-weight: 600;
+  src: url("../fonts/Mukta-SemiBold.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.3;
+  margin-top: 0.5556em;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-top: 0.625em;
+  margin-bottom: 0em;
+}
+
+h3 {
+  font-size: 2.6rem;
+  line-height: 1.4;
+  margin-top: 0.6667em;
+  margin-bottom: 0em;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin-top: 0.7692em;
+  margin-bottom: 0em;
+}
+
+h5 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-top: 0.9091em;
+  margin-bottom: 0em;
+}
+
+h6 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-top: 0.6em;
+  margin-bottom: 0em;
+}
+
+p {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin: 0 0 1.4286em 0;
+}

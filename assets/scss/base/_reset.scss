@@ -1,0 +1,400 @@
+/*basic reset*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+/*GLOBAL PAGE STYLES*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+  color: $N400;
+}
+html {
+  font-size: $base-size;
+}
+body {
+  font-size: 1.4rem;
+}
+
+#wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#footer-control {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-size: 1.4rem;
+  color: $O400;
+  font-weight: 500;
+  user-select: none;
+}
+
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: initial;
+}
+
+li {
+  list-style: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  padding: 0 16px;
+  border-radius: 4px;
+  height: 32px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+
+.btn--primary {
+  background: $O400;
+  color: $N0;
+  &:hover {
+    background: $O500;
+    color: $N0;
+  }
+  &:visited,
+  &:focus,
+  &:active {
+    color: $N0;
+  }
+}
+
+.btn--secondary {
+  background: $N300;
+  color: $N0;
+  &:hover {
+    background: $N400;
+    color: $N0;
+  }
+  &:visited,
+  &:focus,
+  &:active {
+    color: $N0;
+  }
+}
+
+.btn--link {
+  background: none;
+  color: $O400;
+  &:hover {
+    background: none;
+    color: $O500;
+  }
+  &:visited,
+  &:focus,
+  &:active {
+    color: $N400;
+  }
+}
+.btn--form {
+  align-self: center;
+}
+.btn--default {
+  background: $N25;
+  color: $N400;
+  &:hover {
+    background: $N50;
+    color: $N400;
+  }
+  &:visited,
+  &:focus,
+  &:active {
+    color: $N400;
+  }
+}
+.btn--error {
+  background: $R400;
+  color: $N0;
+  &:hover {
+    background: $R500;
+    color: $N0;
+  }
+  &:visited,
+  &:focus,
+  &:active {
+    color: $N0;
+  }
+}
+.btn--edit {
+  background: $B400;
+  color: $N0;
+  &:hover {
+    background: $B500;
+    color: $N0;
+  }
+  &:visited,
+  &:focus,
+  &:active {
+    color: $N0;
+  }
+}
+.success {
+  color: $G400;
+}
+.error {
+  color: $R400;
+}
+.btn--form {
+  display: inline-block;
+  align-self: center;
+}
+
+.no-border {
+  border: 0;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+.btn-group {
+  display: flex;
+  .btn {
+    margin-left: 24px;
+  }
+}
+.flex-end {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row !important;
+  .form-row {
+    width: 45%;
+  }
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  display: flex;
+}
+.flex-between {
+  justify-content: space-between;
+  display: flex;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+.col--10 {
+  width: 10%;
+}
+
+.col--20 {
+  width: 20%;
+}
+
+.col--25 {
+  width: 25%;
+}
+
+.col--30 {
+  width: 30%;
+}
+
+.col--40 {
+  width: 40%;
+}
+
+.col--45 {
+  width: 45%;
+}
+
+.col--50 {
+  width: 50%;
+}
+
+.col--55 {
+  width: 55%;
+}
+
+.col--60 {
+  width: 60%;
+}
+
+.col--65 {
+  width: 65%;
+}
+
+.col--70 {
+  width: 70%;
+}
+
+.col--80 {
+  width: 80%;
+}
+
+.col--90 {
+  width: 90%;
+}
+
+.col--100 {
+  width: 100%;
+}
+
+/*LOADING STATE STYLES*/
+.loader-block {
+  display: flex;
+  height: 140px;
+  width: 140px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg--loader {
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+  display: inline-block;
+}
+.loader--dot {
+  fill: $O400;
+  stroke: none;
+}
+
+.btn--row {
+  .btn {
+    margin-right: 32px;
+  }
+}
+/*BUTTON LODING STATES*/
+
+.spin {
+  position: relative;
+  &.btn--primary::before {
+    border: solid 2px $O300;
+    border-bottom-color: $N0;
+    border-left-color: $N0;
+  }
+  &.btn--secondary::before {
+    border: solid 2px $N200;
+    border-bottom-color: $N0;
+    border-left-color: $N0;
+  }
+  &.btn--default::before {
+    border: solid 2px $N50;
+    border-bottom-color: $N0;
+    border-left-color: $N0;
+  }
+  &::before {
+    position: relative;
+    transition: opacity linear 0.1s;
+    top: 4px;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 18px;
+    margin-right: 12px;
+    width: 18px;
+    animation: 1s linear infinite spinner;
+  }
+}
+
+/*EMPTY STATES STYLES*/
+.empty-block {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto;
+  .empty-block--item {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span.svg {
+      width: 84px;
+      height: 84px;
+    }
+    .empty-block--msg {
+      margin-top: 16px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+    .empty-block--head {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 4px;
+      color: $N300;
+    }
+    .empty-block--label {
+      color: $N300;
+      width: 300px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.btn--join {
+  padding: 0 28px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 1.6rem;
+  border-radius: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+}

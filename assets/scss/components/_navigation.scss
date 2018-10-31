@@ -1,0 +1,19 @@
+.header-wrap {
+  height: 80px;
+  width: 100%;
+  background: rgba(230, 34, 60, 0.2);
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  z-index: 50;
+}
+.header-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand {
+  display: block;
+  width: 136px;
+}

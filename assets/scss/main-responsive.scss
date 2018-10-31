@@ -1,0 +1,36 @@
+@import "base/_variables.scss";
+
+@media only screen and (min-width: 1560px) {
+}
+@media only screen and (max-width: 1288px) {
+}
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 640px) {
+  .hidden--xs {
+    display: none;
+  }
+
+  .show--xs {
+    display: block;
+    &.sidenav--link {
+      display: flex !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 599px) {
+}
+
+@media only screen and (max-width: 440px) {
+}
+@media only screen and (max-width: 376px) {
+}
+@media only screen and (max-width: 364px) {
+}
+@media only screen and (max-width: 340px) {
+}

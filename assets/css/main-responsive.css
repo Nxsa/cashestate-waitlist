@@ -1,0 +1,17 @@
+/*PRIMARY COLOR*/
+/*NEUTRALS*/
+/*SECONDARY COLORS*/
+/*GREEN*/
+/*RED*/
+/*BLUE*/
+/*Other colors*/
+@media only screen and (max-width: 640px) {
+  .hidden--xs {
+    display: none; }
+
+  .show--xs {
+    display: block; }
+    .show--xs.sidenav--link {
+      display: flex !important; } }
+
+/*# sourceMappingURL=main-responsive.css.map */
