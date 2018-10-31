@@ -293,102 +293,11 @@ button:focus {
   width: 100%;
 }
 
-/*LOADING STATE STYLES*/
-.loader-block {
-  display: flex;
-  height: 140px;
-  width: 140px;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.svg--loader {
-  width: 100px;
-  height: 30px;
-  margin: 20px;
-  display: inline-block;
-}
-.loader--dot {
-  fill: $O400;
-  stroke: none;
-}
-
 .btn--row {
   .btn {
     margin-right: 32px;
   }
 }
-/*BUTTON LODING STATES*/
-
-.spin {
-  position: relative;
-  &.btn--primary::before {
-    border: solid 2px $O300;
-    border-bottom-color: $N0;
-    border-left-color: $N0;
-  }
-  &.btn--secondary::before {
-    border: solid 2px $N200;
-    border-bottom-color: $N0;
-    border-left-color: $N0;
-  }
-  &.btn--default::before {
-    border: solid 2px $N50;
-    border-bottom-color: $N0;
-    border-left-color: $N0;
-  }
-  &::before {
-    position: relative;
-    transition: opacity linear 0.1s;
-    top: 4px;
-    border-radius: 50%;
-    content: "";
-    display: inline-block;
-    height: 18px;
-    margin-right: 12px;
-    width: 18px;
-    animation: 1s linear infinite spinner;
-  }
-}
-
-/*EMPTY STATES STYLES*/
-.empty-block {
-  height: 300px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5% auto;
-  .empty-block--item {
-    padding: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    span.svg {
-      width: 84px;
-      height: 84px;
-    }
-    .empty-block--msg {
-      margin-top: 16px;
-      display: flex;
-      text-align: center;
-      flex-direction: column;
-    }
-    .empty-block--head {
-      font-size: 1.8rem;
-      font-weight: 500;
-      margin-bottom: 4px;
-      color: $N300;
-    }
-    .empty-block--label {
-      color: $N300;
-      width: 300px;
-      font-size: 1.5rem;
-    }
-  }
-}
-
 .btn--join {
   padding: 0 28px;
   height: 36px;
@@ -397,4 +306,9 @@ button:focus {
   border-radius: 36px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.btn--white {
+  color: $O400 !important;
+  background: $N0;
 }
