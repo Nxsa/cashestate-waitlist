@@ -50,6 +50,16 @@
       margin-bottom: 32px;
     }
   }
+
+  .card-large {
+    width: 90%;
+    margin-top: 24%;
+  }
+  .modal-item {
+    .col--45 {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -64,6 +74,12 @@
     justify-content: space-around;
     padding: 20px 10%;
     height: 180px;
+  }
+  .flex-end {
+    flex-direction: column !important;
+    .form-row {
+      width: 100%;
+    }
   }
 }
 

@@ -35,7 +35,14 @@
     flex-direction: column; }
     .row-item .col--45 {
       width: 100%;
-      margin-bottom: 32px; } }
+      margin-bottom: 32px; }
+
+  .card-large {
+    width: 90%;
+    margin-top: 24%; }
+
+  .modal-item .col--45 {
+    width: 100%; } }
 @media only screen and (max-width: 599px) {
   .above-footer .above-footer--info {
     max-width: 90%;
@@ -45,6 +52,11 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 20px 10%;
-    height: 180px; } }
+    height: 180px; }
+
+  .flex-end {
+    flex-direction: column !important; }
+    .flex-end .form-row {
+      width: 100%; } }
 
 /*# sourceMappingURL=main-responsive.css.map */
