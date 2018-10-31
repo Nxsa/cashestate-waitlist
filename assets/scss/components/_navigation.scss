@@ -1,11 +1,15 @@
 .header-wrap {
   height: 80px;
   width: 100%;
-  background: rgba(230, 34, 60, 0.2);
+  background: rgba(230, 34, 60, 0);
   padding: 0 80px;
   display: flex;
   align-items: center;
-  z-index: 50;
+  z-index: 40;
+  position: fixed;
+}
+.scrolled {
+  background: $N500 !important;
 }
 .header-item {
   width: 100%;

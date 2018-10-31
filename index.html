@@ -36,7 +36,7 @@
                     <a class="navbar-brand" href="#/">
                         <img src="assets/logo/cashestate-white.svg" alt="Cash Estate" />
                     </a>
-                    <a class="btn btn--join btn--primary" href="#/">Join the waitlist</a>
+                    <a class="btn btn--join btn--primary modal-ctrl hidden--xs" href="#/">Join the waitlist</a>
                 </div>
             </header>
             <section class="above-fold">
@@ -44,7 +44,7 @@
                     <div class="col--45 fold--content">
                         <span class="fold--title">Invest Globally and Earn Superior Returns</span>
                         <span class="fold--desc">Earn 10% or more in US Dollar returns, annually</span>
-                        <a class="btn btn--join btn--primary" href="#/">Join the waitlist</a>
+                        <a class="btn btn--join btn--primary modal-ctrl" href="#/">Join the waitlist</a>
                     </div>
                     <div class="col--45 fold--image">
                         <div class="fold-image--item">
@@ -61,7 +61,7 @@
                     <div class="col--45">
                         <span class="welcome--info">Invest in a stable portfolio of assets that produce above market US
                             Dollar returns and never have to worry about your investment performance again. </span>
-                        <a class="btn btn--join btn--primary" href="#/">Join the waitlist</a>
+                        <a class="btn btn--join btn--primary modal-ctrl" href="#/">Join the waitlist</a>
                     </div>
                 </div>
             </section>
@@ -176,8 +176,44 @@
             </section>
             <div class="above-footer">
                 <span class="above-footer--info">The Future of Investing starts here.</span>
-                <a href="#/" class="btn btn--join btn--white btn--form">Join the waitlist</a>
+                <a href="#/" class="btn btn--join btn--white btn--form  modal-ctrl">Join the waitlist</a>
             </div>
+        </div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content card-large">
+                <span class="close">&times;</span>
+                <div class="modal-item flex flex-between">
+                    <div class="col--45 modal-item--info">
+                        <span class="modal--title">Welcome to<br>
+                            the future of investing</span>
+                        <span class="modal--desc">What we offer is a new way to invest, the best returns in the
+                            country, and an opportunity to invest everywhere.
+                            Join us today to receive updates</span>
+                    </div>
+                    <div class="col--45">
+                        <div class="modal--form">
+                            <div class="flex-end">
+                                <div class="form-row">
+                                    <label class="form--label">First name</label>
+                                    <input type="text" class="form--input">
+                                </div>
+                                <div class="form-row">
+                                    <label class="form--label">First name</label>
+                                    <input type="text" class="form--input">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="form--label">Email Address</label>
+                                <input type="mail" class="form--input">
+                            </div>
+                            <div class="form-row"><a class="btn btn--join btn--primary btn--form" href="#/">Join the
+                                    waitlist</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div id="footer" class="flex flex-between footer-item">
             <img src="assets/logo/cashestate-white.svg" alt="Cash Estate" class="footer--brand">

@@ -5,9 +5,26 @@
 @media only screen and (max-width: 1288px) {
 }
 @media only screen and (max-width: 1024px) {
+  .above-fold {
+    height: 50vh;
+  }
+
+  .fold--content {
+    .fold--title {
+      font-size: 4rem;
+    }
+  }
+  .welcome--title {
+    font-size: 3.2rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .above-footer {
+    .above-footer--info {
+      font-size: 3.2rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -21,9 +38,33 @@
       display: flex !important;
     }
   }
+  .above-fold {
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 80px;
+  }
+  .row-item {
+    flex-direction: column;
+    .col--45 {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+  }
 }
 
 @media only screen and (max-width: 599px) {
+  .above-footer {
+    .above-footer--info {
+      max-width: 90%;
+      margin: 16px auto;
+    }
+  }
+  .footer-item {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 10%;
+    height: 180px;
+  }
 }
 
 @media only screen and (max-width: 440px) {
