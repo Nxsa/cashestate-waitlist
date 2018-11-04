@@ -37,16 +37,22 @@
       width: 100%;
       margin-bottom: 32px; }
 
-  .card-large {
-    width: 90%;
-    margin-top: 24%; }
-
-  .modal-item .col--45 {
-    width: 100%; } }
+  .form-group {
+    flex-direction: column;
+    align-items: center; }
+    .form-group .form--input {
+      margin-bottom: 32px;
+      border-radius: 8px;
+      border: 1px solid #fce3d2;
+      width: 240px !important; }
+      .form-group .form--input:last-of-type {
+        border-left: 1px solid #fce3d2; } }
 @media only screen and (max-width: 599px) {
-  .above-footer .above-footer--info {
-    max-width: 90%;
-    margin: 16px auto; }
+  .above-footer {
+    padding: 30% 0; }
+    .above-footer .above-footer--info {
+      max-width: 90%;
+      margin: 16px auto; }
 
   .footer-item {
     flex-direction: column;
