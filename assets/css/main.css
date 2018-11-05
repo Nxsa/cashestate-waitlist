@@ -516,6 +516,8 @@ button:focus {
       margin-right: -4px;
       border-left: none; }
   .form-group a.btn {
-    margin-left: -4px; }
+    margin-left: -4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
 
 /*# sourceMappingURL=main.css.map */

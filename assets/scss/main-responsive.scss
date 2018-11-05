@@ -31,7 +31,9 @@
   .hidden--xs {
     display: none;
   }
-
+  .header-wrap {
+    padding: 0 20px;
+  }
   .show--xs {
     display: block;
     &.sidenav--link {
@@ -50,6 +52,11 @@
       margin-bottom: 32px;
     }
   }
+  .feat-item {
+    .row-item {
+      flex-direction: column-reverse;
+    }
+  }
   .form-group {
     flex-direction: column;
     align-items: center;
@@ -57,10 +64,13 @@
       margin-bottom: 32px;
       border-radius: 8px;
       border: 1px solid $O50;
-      width: 240px !important;
+      width: 280px !important;
       &:last-of-type {
         border-left: 1px solid $O50;
       }
+    }
+    a.btn {
+      border-radius: 8px;
     }
   }
 }
@@ -84,6 +94,9 @@
     .form-row {
       width: 100%;
     }
+  }
+  .feat--info {
+    max-width: 100%;
   }
 }
 
